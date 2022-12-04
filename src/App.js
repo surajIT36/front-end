@@ -6,19 +6,20 @@ import SignUp from "./components/SignUp";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Nav />
-    <Routes>
-      <Route path="/" element={<h1>Product</h1>} />
-      <Route path="/add" element={<h1>Add Product</h1>} />
-      <Route path="/update" element={<h1>profile Product</h1>} />
-      <Route path="/profile" element={<h1>Profile</h1>} />
-      <Route path="/logout" element={<h1>logout</h1>} />
-      <Route path="/signup" element={ <SignUp /> } />
-    </Routes>
-    <Footer />
-    </BrowserRouter>
-    
+      <Routes>
+        <Route path="/" element={<h1>Product</h1>} />
+        <Route path="/add" element={<h1>Add Product</h1>} />
+        <Route path="/update" element={<h1>profile Product</h1>} />
+        <Route path="/profile" element={<h1>Profile</h1>} />
+        <Route path="/logout" element={<h1>logout</h1>} />
+        <Route path="/signup" element={<SignUp />} />
+      </Routes>
+      <Footer />
+    </>
+
+
   );
 }
 

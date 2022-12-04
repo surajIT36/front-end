@@ -2,12 +2,11 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
-import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 
 const SignUp = () => {
     return (
-        <Container className='mt-4 d-flex'>
+        <div className='mt-4 d-flex'>
             <img src="image-1.jpg" alt="Logo" style={{width:'49%'}} />;
             <Card style={{ width: '33rem',marginLeft: '79px' }} className='pr-3'>
                 <Card.Header>SignUp Form</Card.Header>
@@ -69,7 +68,7 @@ const SignUp = () => {
                     </Card.Text>
                 </Card.Body>
             </Card>
-        </Container>
+        </div>
 
     );
 }

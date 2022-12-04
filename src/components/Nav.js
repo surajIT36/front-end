@@ -1,22 +1,25 @@
-import { Outlet, Link } from "react-router-dom";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
-const Nav = () => {
+const NavBar =() => {
   return (
     <>
-      <nav>
-        <ul className="nav-ul">
-          <li><Link to="/">Products</Link></li>
-          <li><Link to="/add">Add Product</Link></li>
-          <li><Link to="/update">Update Product</Link></li>
-          <li><Link to="/profile">Profile</Link></li>
-          <li><Link to="/logout">Logout</Link></li>
-          <li><Link to="/signup">SignUp</Link></li>
-        </ul>
-      </nav>
-
-      <Outlet />
+      <Navbar bg="dark" variant="dark">
+        <Container>
+          <Navbar.Brand href="">E-Commerce</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link to="/">Home</Nav.Link>
+            <Nav.Link to="add">Add Product</Nav.Link>
+            <Nav.Link to="update">Update Product</Nav.Link>
+            <Nav.Link to="Profile">Profile</Nav.Link>
+            <Nav.Link to="logout">Logout</Nav.Link>
+            <Nav.Link to="signup">SignUp</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
     </>
-  )
-};
+  );
+}
 
-export default Nav;
+export default NavBar;
